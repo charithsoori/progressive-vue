@@ -5,18 +5,20 @@
 <body>
     <div id="app">
         {{ message }}
-        <todo-item></todo-item>
+        <framework-item v-for="framework in frameworks" v-bind:framework="framework"></framework-item>
     </div>
 </body>
 <script>
     // Define a new component called todo-item
-    Vue.component('todo-item', {
-        template: '<ol><li>Meteor</li><li>Angular 1</li><li>Angular 2</li><li>React</li></ol>'
+    Vue.component('framework-item', {
+        props: ['framework'],
+        template: '<ol>{{framework}}</ol>'
     })
     var app = new Vue({
         el: '#app',
         data: {
-            message: 'Hello Vue!. You are Simpler than following ..'
+            message: 'Hello Vue!. You are Simpler than following ..',
+            frameworks: ['Meteor', 'Angular 1', 'Angular 2', 'React']
         }
     })
 </script>

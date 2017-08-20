@@ -1,24 +1,11 @@
-<head>
-    <script src="https://unpkg.com/vue"></script>
-</head>
-
-<body>
-    <div id="app">
-        {{ message }}
-        <framework-item v-for="framework in frameworks" v-bind:framework="framework"></framework-item>
-    </div>
-</body>
-<script>
-    // Define a new component called todo-item
-    Vue.component('framework-item', {
-        props: ['framework'],
-        template: '<ol>{{framework}}</ol>'
-    })
-    var app = new Vue({
-        el: '#app',
-        data: {
-            message: 'Hello Vue!. You are Simpler than following ..',
-            frameworks: ['Meteor', 'Angular 1', 'Angular 2', 'React']
-        }
-    })
-</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>progressive-vue</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>

@@ -1,6 +1,9 @@
 # progressive-vue
+> Demonstrate progressive nature of VueJs framework.
 
-> A Vue.js project
+## Features
+1. Declarative rendering  - branch one
+2. Component system       - branch two
 
 ## Build Setup
 
@@ -13,6 +16,3 @@ npm run dev
 
 # build for production with minification
 npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
